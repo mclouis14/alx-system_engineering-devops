@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 # The bash script installs nginx and configures it on a remote server.
+# And serves a default page index.html on HTTP GET request.
 
-apt-get -y update
-apt-get -y install nginx
-ufw allow 'Nginx HTTP'
-echo 'Hello World!' > /var/www/html/index.nginx-debian.html
-service nginx start
+sudo apt-get update -y
+
+sudo apt-get install nginx -y
+
+echo 'Hello World!' > /var/www/html/index.html
+
+service nginx restart
