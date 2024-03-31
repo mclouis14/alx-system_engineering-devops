@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # The bash script installs nginx and configures it on a remote server.
-# And serves a default page index.html on HTTP GET request.
+# And serves a default page index.html on the HTTP GET request.
 
 sudo apt-get update -y
 
